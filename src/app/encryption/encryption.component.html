@@ -1,0 +1,19 @@
+<!-- src/app/app.component.html -->
+<div style="text-align:center">
+  <div style="text-align:center">
+    <h1>Angular Crypto Example</h1>
+  
+    <form (ngSubmit)="onSubmit()">
+      <label for="dataInput">Enter text to encrypt:</label><br>
+      <input type="text" id="dataInput" [(ngModel)]="inputText" name="inputText" placeholder="Enter text"><br><br>
+  
+      <label for="secretKey">Enter secret key:</label><br>
+      <input type="text" id="secretKey" [(ngModel)]="secretKey" name="secretKey" placeholder="Enter secret key"><br><br>
+  
+      <button type="submit">Encrypt & Decrypt</button>
+    </form>
+  
+   
+    <p><strong>Encrypted Text:</strong> {{ encryptedText }}</p>
+  
+  </div>
